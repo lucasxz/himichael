@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>COVID-19 symptom prediction</title>
+</head>
+<style>
+  .container {
+    font-family: "Serif";
+    border: 10px azure;
+
+  }
+
+  .dropdown {
+    font-family: "Serif";
+    color: black;
+    border: none
+  }
+</style>
+
+<body style="background:antiquewhite;">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid" style="background:white">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="true">
+          more
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">algorithm</a></li>
+          <li><a class="dropdown-item" href="#">prediction</a></li>
+        </ul>
+      </div>
+      <h1 style="font-family:serif">COVID-19 Personal Risk Assessment</h1>
+      <div>
+        <a class="btn btn-dark" href="login.php">
+          login
+        </a>
+        <a class="btn btn-dark" href="signup.html">
+          signup
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="mt-5 text-center">About Us</h2>
+    <p class="text-center">
+      We are a team of Industrial Engineering student from purdue university. <br><br>
+      michael said to <br><br>
+      add another 2 paragraphs
+    </p>
+
+    <div class="mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <img class="rounded img-fluid" src="https://picsum.photos/536/354">
+        </div>
+        <div class="col">
+          <img class="rounded img-fluid" src="https://picsum.photos/536/354">
+        </div>
+      </div>
+      <div>
+      </div>
+    </div>
+  </div>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>COVID-19 STATS - JAVASCRIPT</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.png" alt="" />
+        <p>COVID-19<br />STATS</p>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search Country..." />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="./js/countries.js"></script>
+    <script src="./js/app.js"></script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
